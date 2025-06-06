@@ -1,0 +1,451 @@
+/*EMPEZAMOS A PROGRAMAR EL ESTILO PARA EL SITIO WEB*/
+
+
+/*Reset general del sitio web*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin-Sans", sans-serif, Helvetica, sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+body {
+    background-color: white;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    padding: 5px;
+    width: 100%;
+
+}
+
+.site-footer {
+    background-color: #F49BAB;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    padding: 40px 20px;
+    text-align: center;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    max-width: 300px;
+    /* Limita el ancho de cada sección */
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+/*Cabecera y menú*/
+header {
+    position: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: #7C4585;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 99;
+}
+
+h1 {
+    color: white;
+}
+
+a {
+    color: violet;
+}
+
+/*Recuadro de menu */
+nav ul li {
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    padding-right: 3%;
+    transition: .5s
+}
+
+/*Interaccion*/
+nav ul li:hover {
+    background: #fff;
+    color: #165938;
+}
+
+
+/*PAGE INDEX: */
+.contenedor {
+    background-color: #A5158C;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    /* Alinea verticalmente */
+    padding: 15px;
+    margin: 25px;
+}
+
+img {
+
+    width: 100%;
+    max-width: 290px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+.banner {
+    background: url('../image/pijama_2.jpeg') no-repeat center center/cover;
+    height: 50vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner h3 {
+    font-size: 3rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.mision {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    max-width: 100%;
+    margin: 40px;
+    background: #9B7EBD;
+
+}
+
+.mision-texto {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.mision-texto h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.mision-texto p {
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.mision-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.mision-imagen img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.vision {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    max-width: 100%;
+    margin: 40px;
+    background: #DC8BE0;
+}
+
+.vision-texto {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.vision-texto h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.vision-texto p {
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.vision-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.vision-imagen img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.video_pijamas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.video-texto h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.video-texto p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.video_cont {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*PAGE PRODUCTO: */
+
+.imagen-interactiva {
+    width: 200px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.imagen-interactiva:hover {
+    transform: scale(1.2);
+    /* Hace que la imagen crezca */
+    opacity: 0.7;
+    /* Reduce la opacidad */
+}
+
+.products {
+    background-color: #FF6363;
+    box-sizing: border-box;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 25px;
+    display: flex;
+    gap: 20px;
+}
+
+
+.short {
+    background-color: #DC8BE0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 30px;
+    gap: 15px;
+
+}
+
+.niño {
+    background-color: #00CAFF;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 30px;
+    gap: 15px;
+}
+
+.lujo {
+     background-color: #FFE99A;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 30px;
+    gap: 15px;
+}
+
+/*PAGE NOSOTROS: */
+
+.nosotros {
+    text-align: center;
+    background-color: #FFE8CD;
+
+}
+
+.fund {
+    width: 100%;
+    height: auto;
+
+}
+
+.resolucion {
+    width: 99%;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+/**Movil**/
+
+@media (max-width: 767px) {
+    @media (max-width: 767px) {
+        header {
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            gap: 10px;
+        }
+
+        nav ul li {
+            margin: 5px 0;
+            width: auto;
+            padding: 5px 10px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .products {
+            flex-direction: column;
+            padding: 10px;
+            margin: 30px;
+            gap: 20px;
+        }
+
+        .short {
+            flex-direction: column;
+            padding: 10px;
+            margin: 30px;
+            gap: 20px;
+        }
+
+        .contenedor {
+            flex-direction: column;
+            /* Alinea verticalmente */
+            padding: 15px;
+            margin: 25px;
+            gap: 15px;
+        }
+
+        .video_pijamas {
+            flex-direction: column;
+            gap: 30px;
+            padding: 40px;
+            max-width: 300px;
+            margin: 40px;
+        }
+
+    }
+
+}
+
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+
+    .movil {
+        display: none;
+    }
+}
+
+
+/**Escritorio**/
+
+@media (min-width: 991px) {
+    .tablet {
+        display: none;
+    }
+
+    .movil {
+        display: none;
+    }
+}
+

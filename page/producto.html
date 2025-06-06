@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Pijamas</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="" alt="">
+        </div>
+        <h1>Dreams & fashion</h1>
+        <nav class="navmenu">
+            <ul>
+                <li><a href="../index.html" style="text-decoration:none">Inicio</a> </li>
+                <li><a href="#" style="text-decoration:none">Pijamas</a></li>
+                <li><a href="acercadenosotros.html" style="text-decoration:none">Nosotros</a></li>
+                <li><a href="ubicacion.html" style="text-decoration:none">Ubicacion</a></li>
+                <li><a href="contactos.html" style="text-decoration:none">Contactos</a></li>
+            </ul>
+
+
+
+        </nav>
+
+    </header>
+    <br>
+    <section class="banner">
+        <h3>¡Nueva Colección Primavera!</h3>
+    </section>
+    <br><br><br>
+    <hr>
+    <br><br>
+    <section class="products">
+        <div>
+            <img src="../image/Pijama de bata.jpg" class="imagen-interactiva" alt="Pijama 1">
+            <h3>Pijama 1</h3>
+            <p>Precio: $42.000</p>
+            <p>Talla: S M L XL</p>
+            <button>Comprar</button>
+        </div>
+
+        <div>
+            <img src="../image/pijama_2.jpeg" class="imagen-interactiva" alt="Pijama 2">
+            <h3>Pijama 2</h3>
+            <p>Precio: $32.000</p>
+            <p>Talla: S M L XL</p>
+            <button>Comprar</button>
+        </div>
+
+        <div>
+            <img src="../image/pijama_3.jpeg" class="imagen-interactiva" alt="Pijama 2">
+            <h3>Pijama 3</h3>
+            <p>Precio: $32.000</p>
+            <p>Talla: S M L XL</p>
+            <button>Comprar</button>
+        </div>
+
+        <div>
+            <img src="../image/pijama_4.jpeg" class="imagen-interactiva" alt="Pijama 2">
+            <h3>Pijama 4</h3>
+            <p>Precio: $32.000</p>
+            <p>Talla: S M L XL</p>
+            <button>Comprar</button>
+        </div>
+
+    </section>
+    <br><br>
+
+    <section class="products">
+        <div>
+            <img src="../image/pijama-pantalon.jpeg" class="imagen-interactiva" alt="Pijama 1">
+            <h3>Pijama 5</h3>
+            <p>Precio: $42.000</p>
+            <p>Talla: S M L XL</p>
+            <button onclick="abrirModal()">Comprar</button>
+        </div>
+
+        <div>
+            <img src="../image/pijama-pantalon2.jpeg" class="imagen-interactiva" alt="Pijama 2">
+            <h3>Pijama 6</h3>
+            <p>Precio: $32.000</p>
+            <p>Talla: S M L XL</p>
+            <button>Comprar</button>
+        </div>
+
+        <div>
+            <img src="../image/pijama-pantalon3.jpeg" class="imagen-interactiva" alt="Pijama 2">
+            <h3>Pijama 7</h3>
+            <p>Precio: $32.000</p>
+            <p>Talla: S M L XL</p>
+            <button>Comprar</button>
+        </div>
+
+        <div>
+            <img src="../image/pijama-pantalon4.jpeg" class="imagen-interactiva" alt="Pijama 2">
+            <h3>Pijama 8</h3>
+            <p>Precio: $32.000</p>
+            <p>Talla: S M L XL</p>
+            <button>Comprar</button>
+        </div>
+
+    </section>
+
+
+    <br><br>
+
+    <section class="categories">
+        <h2>Categorías Populares</h2>
+        <ul>
+            <li><a href="../categorias/short.html">Pijamas Short</a></li>
+            <li><a href="../categorias/niños.html">Pijamas para niños</a></li>
+            <li><a href="../categorias/lujo.html">Pijamas de lujo</a></li>
+        </ul>
+        <button onclick="cambiarFondo1()">Oscuro</button>
+        <button onclick="cambiarFondo()">Claro</button>
+    </section>
+    <br><br>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 style="text-align: center;">Dreams & Fashion</h3>
+                <p>Negocio dedicado a ofrecer las mejores pijamas para tu comodidad y estilo.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: dreams&fashion@gmail.com</p>
+                <p>Teléfono: +57 320 456 789</p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <script src="../js/javascript.js"></script>
+
+        <div id="modalCompra" class="modal">
+            <div class="modal-contenido">
+                <span id="cerrarModal" class="cerrar">&times;</span>
+                <h2>Confirmar Compra</h2>
+                <p id="productoSeleccionado">¿Estás seguro de que deseas comprar este producto?</p>
+                <button class="btn-confirmar">Sí, comprar</button>
+            </div>
+        </div>
+
+</body>
+
+</html>
